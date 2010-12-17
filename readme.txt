@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Geopost ===
 Contributors: rampantlogic
 Donate link: http://www.rampantlogic.com/geopost
 Tags: googlemaps, travel, photography
