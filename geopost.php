@@ -8,9 +8,7 @@ Author: Rampant Logic
 Author URI: http://www.rampantlogic.com
 License: GPL2
 */
-?>
 
-<?
 function geopost_icon_dir() {
 
    return plugins_url('/icons', __FILE__);
