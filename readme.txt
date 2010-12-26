@@ -23,7 +23,7 @@ Geopost is a Wordpress plugin based on Google Maps that let's you specify a loca
 
 = How can I add a marker to the map? =
 
-Choose a post and go to the post's admin page. Look on the right-hand side for a metabox labeled 'Geopost'. Enter a search string like you would on the Google Maps site and press 'Search'. After saving the post, a neew marker will appear on the map.
+Choose a post and go to the post's admin page. Look on the right-hand side for a metabox labeled 'Geopost'. Enter a search string like you would on the Google Maps site and press 'Search'. After saving the post, a new marker will appear on the map.
 
 
 == Screenshots ==
