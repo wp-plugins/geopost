@@ -17,17 +17,25 @@ function geopost_insert_map($atts) {
   extract(shortcode_atts(array(
       'subset' => -1,    // -1 shows all icon types
       'hybrid' => 0,
+	  'terrain' => 0,
+	  'roadmap' => 0,
       'zoom' => 1,
       'lat' => 23,
       'lng' => 12,
       'width' => 520,
       'height' => 300,
   ), $atts));
+  if($roadmap != 0)
+    $type = 3;
+  if($terrain != 0)
+    $type = 2;
+  if($hybrid != 0)
+    $type = 1;  // last one has highest precedence if more than one shortcode is present
   echo '<div id="map_canvas" style="width:'.$width.'px; ';
   echo 'height:'.$height.'px"></div>';
   echo '<script>';
   echo 'geopost_map("map_canvas","' . geopost_icon_dir() . '",';
-  echo "$hybrid, $zoom, $lat, $lng);";
+  echo "$type, $zoom, $lat, $lng);";
   $posts = get_posts('numberposts=-1&post_type=any');
   foreach($posts as $post) {
     $id = $post->ID;
@@ -48,6 +56,8 @@ function geopost_insert_map($atts) {
 function geopost_save_metabox_data($post_id) {
   // verify this came from the our screen and with proper authorization,
   // because save_post can be triggered at other times
+  if(!isset($_POST['geopost_noncename']))	// eliminates notices in debug mode
+    return $post_id;
   if ( !wp_verify_nonce( $_POST['geopost_noncename'], plugin_basename(__FILE__)))
     return $post_id;
   // verify if this is an auto save routine. If it is, our form has not been

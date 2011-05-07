@@ -1,10 +1,10 @@
-=== Geopost ===
+=== Plugin Name ===
 Contributors: rampantlogic
 Donate link: http://www.rampantlogic.com/geopost
 Tags: googlemaps, travel, photography
 Requires at least: 3.0
 Tested up to: 3.0.3
-Stable tag: 1.0
+Stable tag: 1.1
 
 Uses Google Maps API to create a map containing markers for posts based on individually assigned geocoded locations.
 
@@ -23,7 +23,7 @@ Geopost is a Wordpress plugin based on Google Maps that let's you specify a loca
 
 = How can I add a marker to the map? =
 
-Choose a post and go to the post's admin page. Look on the right-hand side for a metabox labeled 'Geopost'. Enter a search string like you would on the Google Maps site and press 'Search'. After saving the post, a new marker will appear on the map.
+Choose a post and go to the post's admin page. Look on the right-hand side for a metabox labeled 'Geopost'. Enter a search string like you would on the Google Maps site and press 'Search'. After saving the post, a neew marker will appear on the map.
 
 
 == Screenshots ==
@@ -33,10 +33,17 @@ Choose a post and go to the post's admin page. Look on the right-hand side for a
 
 == Changelog ==
 
+= 1.1 =
+* Added support for terrain mode and roadmap mode
+* Minor bugfixes
+
 = 1.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.1 =
+* Now supports terrain mode and roadmap mode.
 
 = 1.0 =
 * Initial release
