@@ -4,7 +4,7 @@ Donate link: http://www.rampantlogic.com/geopost
 Tags: googlemaps, travel, photography
 Requires at least: 3.0
 Tested up to: 3.0.3
-Stable tag: 1.1
+Stable tag: 1.2
 
 Uses Google Maps API to create a map containing markers for posts based on individually assigned geocoded locations.
 
@@ -33,6 +33,9 @@ Choose a post and go to the post's admin page. Look on the right-hand side for a
 
 == Changelog ==
 
+= 1.2 =
+* Fixed a bug that was introduced in version 1.1
+
 = 1.1 =
 * Added support for terrain mode and roadmap mode
 * Minor bugfixes
@@ -41,6 +44,9 @@ Choose a post and go to the post's admin page. Look on the right-hand side for a
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.2 = 
+* Now supports terrain mode and roadmap mode.
 
 = 1.1 =
 * Now supports terrain mode and roadmap mode.

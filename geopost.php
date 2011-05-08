@@ -3,7 +3,7 @@
 Plugin Name: Geopost
 Plugin URI: http://www.rampantlogic.com/geopost
 Description: Uses Google Maps API to create a map containing markers for posts based on individually assigned geocoded locations.
-Version: 1.1
+Version: 1.2
 Author: Rampant Logic
 Author URI: http://www.rampantlogic.com
 License: GPL2
@@ -25,6 +25,7 @@ function geopost_insert_map($atts) {
       'width' => 520,
       'height' => 300,
   ), $atts));
+  $type = 0;
   if($roadmap != 0)
     $type = 3;
   if($terrain != 0)
